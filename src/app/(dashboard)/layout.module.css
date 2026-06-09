@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.aside {
+  width: 220px;
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px 0;
+  flex-shrink: 0;
+}
+
+.logo {
+  padding: 0 20px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+  background: #f5f5f5;
+}

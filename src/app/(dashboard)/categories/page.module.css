@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.addBtn {
+  padding: 8px 16px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.addBtn:hover {
+  background: #1565c0;
+}
+
+.formCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+}
+
+.submitBtn {
+  padding: 8px 16px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tableWrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead tr {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.th {
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 600;
+  color: #666;
+}
+
+.row {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.td {
+  padding: 14px 20px;
+}
+
+.actionGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn {
+  padding: 4px 10px;
+  border: 1px solid #1976d2;
+  background: #fff;
+  color: #1976d2;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+.deleteBtn {
+  padding: 4px 10px;
+  border: 1px solid #c62828;
+  background: #fff;
+  color: #c62828;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: #c62828;
+  color: #fff;
+}

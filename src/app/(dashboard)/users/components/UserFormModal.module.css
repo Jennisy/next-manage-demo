@@ -1,0 +1,120 @@
+/* 新增用户按钮 */
+.addButton {
+  padding: 8px 20px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.addButton:hover {
+  background: #1565c0;
+}
+
+/* 弹窗遮罩层 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* 弹窗内容 */
+.modal {
+  background: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  width: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* 弹窗标题 */
+.title {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+}
+
+/* 表单字段组 */
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formGroup:last-of-type {
+  margin-bottom: 24px;
+}
+
+/* 字段标签 */
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* 输入框和下拉框共用样式 */
+.input,
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.select {
+  background: #fff;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+/* 按钮区域 */
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+/* 取消按钮 */
+.cancelButton {
+  padding: 8px 18px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background: #f5f5f5;
+}
+
+/* 提交按钮 */
+.submitButton {
+  padding: 8px 18px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #1565c0;
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}

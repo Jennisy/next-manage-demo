@@ -1,0 +1,70 @@
+// 这是 Prisma 的数据库模型定义文件
+// 每次修改后执行: npx prisma migrate dev
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(50)
+  email     String   @unique @db.VarChar(100)
+  password  String   @default("123456") @db.VarChar(255)
+  role      String   @default("访客") @db.VarChar(20)
+  status    String   @default("活跃") @db.VarChar(20)
+  createdAt DateTime @default(now()) @map("created_at")
+  posts     Post[]
+
+  @@map("users")
+}
+
+model Category {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique @db.VarChar(50)
+  description String?  @db.VarChar(200)
+  createdAt   DateTime @default(now()) @map("created_at")
+  posts       Post[]
+
+  @@map("categories")
+}
+
+model Tag {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique @db.VarChar(30)
+  createdAt DateTime  @default(now()) @map("created_at")
+  posts     PostTag[]
+
+  @@map("tags")
+}
+
+model Post {
+  id         Int      @id @default(autoincrement())
+  title      String   @db.VarChar(200)
+  content    String   @db.Text
+  summary    String?  @db.VarChar(500)
+  status     String   @default("draft") @db.VarChar(20)
+  authorId   Int      @map("author_id")
+  categoryId Int      @map("category_id")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+  author     User     @relation(fields: [authorId], references: [id])
+  category   Category @relation(fields: [categoryId], references: [id])
+  tags       PostTag[]
+
+  @@map("posts")
+}
+
+model PostTag {
+  postId Int  @map("post_id")
+  tagId  Int  @map("tag_id")
+  post   Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+  tag    Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([postId, tagId])
+  @@map("post_tags")
+}

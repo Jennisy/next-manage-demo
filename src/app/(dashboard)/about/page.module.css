@@ -1,0 +1,25 @@
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  line-height: 1.8;
+}
+
+.paragraph {
+  margin-bottom: 16px;
+}
+
+.list {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.techInfo {
+  color: #666;
+}

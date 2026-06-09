@@ -1,0 +1,116 @@
+.container {
+  max-width: 800px;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .formGroup {
+  flex: 1;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+.tagSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tagOption {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.tagOption:hover {
+  border-color: #1976d2;
+}
+
+.tagSelected {
+  background: #1976d2;
+  color: #fff;
+  border-color: #1976d2;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.submitBtn {
+  padding: 10px 24px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #1565c0;
+}
+
+.cancelBtn {
+  padding: 10px 24px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}

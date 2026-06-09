@@ -1,0 +1,99 @@
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.tableWrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead tr {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.th {
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 600;
+  color: #666;
+}
+
+.row {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.td {
+  padding: 14px 20px;
+}
+
+.emailTd {
+  padding: 14px 20px;
+  color: #666;
+}
+
+.badge {
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.roleAdmin {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.roleEditor {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.roleGuest {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.statusActive {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.statusInactive {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.detailLink {
+  color: #1976d2;
+  font-size: 0.9rem;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resetBtn {
+  padding: 4px 10px;
+  border: 1px solid #ff9800;
+  background: #fff;
+  color: #ff9800;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.resetBtn:hover {
+  background: #ff9800;
+  color: #fff;
+}

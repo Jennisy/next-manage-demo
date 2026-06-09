@@ -1,0 +1,87 @@
+.container {
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.backLink {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.editLink {
+  padding: 6px 14px;
+  background: #ff9800;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.statusBadge {
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.published {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.draft {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.tagList {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tagBadge {
+  padding: 4px 12px;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.summary {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.content {
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+}
